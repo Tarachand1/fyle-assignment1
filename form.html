@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- Button to open the modal -->
+    <button id="openModal">Open Contact Form</button>
+    <a href="index.html"><button id="openModal">Go Back</button></a>
+    
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form-container">
+                <h2>Talk to us</h2>
+                <form action="https://getform.io/f/eapdknxa" method="post">
+                    <input type="email" name="work-email" placeholder="Work email*" required>
+                    <div class="name-fields">
+                        <input type="text" name="first-name" placeholder="First name*" required>
+                        <input type="text" name="last-name" placeholder="Last name*" required>
+                    </div>
+                    <div class="consent">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+                    </div>
+                    <button type="submit">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
